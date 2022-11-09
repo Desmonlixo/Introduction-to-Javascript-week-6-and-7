@@ -17,10 +17,18 @@ img {
 .slideshow-container {
   max-width: 900px;
   position: relative;
-  margin: auto;
+  margin: 0 auto;
+}
+.prev,
+.next {
+  display: none;
 }
 
 /* Next & previous buttons */
+.slideshow-container:hover .prev,
+.slideshow-container:hover .next {
+  display: block;
+}
 .prev,
 .next {
   cursor: pointer;
